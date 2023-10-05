@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie uma Nova Conta</title>
+</head>
+
+<body>
+    <h1>Crie uma Nova Conta</h1>
+
+    <!-- Seção Conta -->
+    <section>
+        <h2>Conta</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br>
+
+            <label for="senha-repetida">Repita a senha:</label>
+            <input type="password" id="senha-repetida" name="senha-repetida" required><br>
+        </form>
+    </section>
+
+    <!-- Seção Endereço -->
+    <section>
+        <h2>Endereço</h2>
+        <form>
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro"><br>
+
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento"><br>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade"><br>
+
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado">
+                <option value="" disabled selected>Selecione um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <!-- Adicione mais estados aqui -->
+            </select><br>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep"><br>
+        </form>
+    </section>
+
+    <!-- Seção Perfil -->
+    <section>
+        <h2>Perfil</h2>
+        <form>
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/jpeg, image/gif, image/png" maxlength="700000"><br>
+
+            <label for="nome-perfil">Nome:</label>
+            <input type="text" id="nome-perfil" name="nome-perfil"><br>
+
+            <label for="site">Site:</label>
+            <input type="url" id="site" name="site"><br>
+
+            <label for="biografia">Biografia:</label>
+            <textarea id="biografia" name="biografia"></textarea><br>
+
+            <label>Gênero:</label><br>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label><br>
+
+            <input type="radio" id="outro" name="genero" value="outro">
+            <label for="outro">Outro</label><br>
+        </form>
+    </section>
+
+    <!-- Seção E-mails -->
+    <section>
+        <h2>E-mails</h2>
+        <form>
+            <input type="checkbox" id="emails-outros-usuarios" name="emails-outros-usuarios">
+            <label for="emails-outros-usuarios">Tudo bem em enviar e-mails com mensagens de outros usuários.</label><br>
+
+            <input type="checkbox" id="emails-promocoes" name="emails-promocoes">
+            <label for="emails-promocoes">Tudo bem em enviar e-mails ocasionais com promoções sobre outros
+                produtos.</label><br>
+        </form>
+    </section>
+
+    <button type="submit">Criar conta</button>
+</body>
+
+</html>
